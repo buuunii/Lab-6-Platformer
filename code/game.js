@@ -231,10 +231,7 @@ Player.prototype.moveX = function(step, level, keys) {
   //Find if there is an obstacle at the newPos
   var obstacle = level.obstacleAt(newPos, this.size);
 
-  if (obstacle == 'lava') {
-    console.log("Touch Lava!")
-    this.pos = new Vector(10,10);
-  }
+
 
   // Move if there's not a wall there.
   if (obstacle!="wall")
